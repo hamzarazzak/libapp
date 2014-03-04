@@ -1,10 +1,17 @@
 source 'https://rubygems.org'
 
+#gem 'spork', :github => 'sporkrb/spork'
+#gem 'spork-rails', :github => 'sporkrb/spork-rails'
+
 gem 'rails', '4.0.2'
 gem 'sqlite3'
 
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.12.2'
+  #gem 'spork', '~> 0.9.2'
+  gem 'spork', :github => 'sporkrb/spork'
+  gem 'spork-rails', :github => 'sporkrb/spork-rails'
 end
 
 group :test do
